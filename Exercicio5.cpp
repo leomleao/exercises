@@ -7,9 +7,7 @@ int main()
   printf("Insira um numero de 1 a 9\n");
   while(kbhit()) getch();
   numero = getch();  
-  int num = numero - '0';  
-  printf("%d \n", num); 
-  
+  int num = numero - '0';   
   if (num > 0 || num <9)  
 // sem erros
       for (int i=0;i<=10;i++)
@@ -19,6 +17,7 @@ int main()
   else
   //deu ruim
    printf("Algo de errado ocorreu! ");   
+   return 0;
   getch(); 
 }    
 
